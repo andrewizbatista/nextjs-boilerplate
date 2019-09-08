@@ -1,0 +1,40 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "plugins": ["@typescript-eslint"],
+  "extends": [
+    "airbnb",
+    "plugin:@typescript-eslint/recommended",
+    "prettier",
+    "prettier/@typescript-eslint",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:import/typescript"
+  ],
+  "settings": {
+    "react": {
+      "version": "detect"
+    },
+    "import/resolver": {
+      "node": {
+        "paths": ["."],
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
+  },
+  "rules": {
+    "@typescript-eslint/explicit-function-return-type": 0,
+    "@typescript-eslint/interface-name-prefix": [2, "always"],
+    "@typescript-eslint/no-empty-interface": 0,
+    "@typescript-eslint/no-explicit-any": 0,
+    "no-empty-pattern": 0,
+    "no-plusplus": [2, { "allowForLoopAfterthoughts": true }],
+    "react/jsx-closing-bracket-location": 0,
+    "react/jsx-filename-extension": 0,
+    "react/jsx-one-expression-per-line": 0,
+    "react/jsx-props-no-spreading": 0,
+    "react/jsx-wrap-multilines": 0
+  }
+}

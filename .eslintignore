@@ -1,0 +1,9 @@
+# Folders
+.next
+node_modules
+out
+
+# Files
+next-env.d.ts
+next.config.js
+package-lock.json
