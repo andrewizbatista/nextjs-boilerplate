@@ -19,8 +19,8 @@ module.exports = {
 
     return config;
   },
-  exportPathMap: () => {
-    let pathMap = {};
+  exportPathMap: (defaultPathMap) => {
+    let pathMap = defaultPathMap;
 
     // insert code that generates the routes
 

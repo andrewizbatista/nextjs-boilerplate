@@ -13,6 +13,10 @@
     "plugin:import/warnings",
     "plugin:import/typescript"
   ],
+  "env": {
+    "browser": true,
+    "node": true
+  },
   "settings": {
     "react": {
       "version": "detect"

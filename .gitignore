@@ -1,7 +1,6 @@
 # Folders
 .next
 node_modules
-out/*
-!out/.gitkeep
+out
 
 # Files
