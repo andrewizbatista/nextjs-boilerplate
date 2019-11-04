@@ -1,7 +1,7 @@
 /**
  * Generate an amount of entities based on the faker data provided.
  */
-export default (fakeEntity: any, howMany: number, overwrites?: {}) => {
+const generateMocks = (fakeEntity: any, howMany: number, overwrites?: {}) => {
   const generateFakeEntity = (): any =>
     overwrites ? { ...fakeEntity(), ...overwrites } : fakeEntity();
 
@@ -23,3 +23,5 @@ export default (fakeEntity: any, howMany: number, overwrites?: {}) => {
 
   return mockedArr;
 };
+
+export default generateMocks;

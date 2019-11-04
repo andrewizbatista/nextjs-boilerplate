@@ -1,6 +1,6 @@
 const appConfig: IAppConfig = {
-  appName: 'André Batista',
-  appWebsite: 'https://andrebatista.dev',
+  appName: 'nextjs-boilerplate',
+  appWebsite: 'https://domain.com',
   appThemeColor: '#8e3545',
   defaultLocale: {
     code: 'en',

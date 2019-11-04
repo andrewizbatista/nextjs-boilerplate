@@ -19,7 +19,7 @@ module.exports = {
 
     return config;
   },
-  exportPathMap: (defaultPathMap) => {
+  exportPathMap: async (defaultPathMap) => {
     let pathMap = defaultPathMap;
 
     // insert code that generates the routes
