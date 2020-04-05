@@ -7,19 +7,27 @@
       "jsx": true
     }
   },
-  "plugins": ["@typescript-eslint"],
+  "plugins": [
+    "@typescript-eslint",
+    "prettier",
+    "react",
+    "react-hooks",
+    "jsx-a11y"
+  ],
   "extends": [
     "airbnb",
     "plugin:@typescript-eslint/recommended",
     "prettier",
     "prettier/@typescript-eslint",
+    "prettier/react",
     "plugin:import/errors",
     "plugin:import/warnings",
     "plugin:import/typescript"
   ],
   "env": {
     "browser": true,
-    "node": true
+    "node": true,
+    "es6": true
   },
   "settings": {
     "react": {
@@ -34,9 +42,11 @@
   },
   "rules": {
     "@typescript-eslint/explicit-function-return-type": 0,
-    "@typescript-eslint/interface-name-prefix": [2, "always"],
     "@typescript-eslint/no-empty-interface": 0,
     "@typescript-eslint/no-explicit-any": 0,
+    "import/extensions": 0,
+    "import/no-named-as-default": 0,
+    "import/order": 0,
     "no-empty-pattern": 0,
     "no-plusplus": [2, { "allowForLoopAfterthoughts": true }],
     "react/jsx-closing-bracket-location": 0,

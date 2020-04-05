@@ -1,7 +1,7 @@
 {
   "routes": [
-    { "src": "/manifest.json", "dest": "/static/manifest.json" },
-    { "src": "/robots.txt", "dest": "/static/robots.txt" },
-    { "src": "/sitemap.xml", "dest": "/static/sitemap.xml" }
+    { "src": "/manifest.json", "dest": "/manifest.json" },
+    { "src": "/robots.txt", "dest": "/robots.txt" },
+    { "src": "/sitemap.xml", "dest": "/sitemap.xml" }
   ]
 }

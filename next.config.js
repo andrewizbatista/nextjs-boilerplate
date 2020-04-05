@@ -6,7 +6,7 @@ module.exports = {
       const entries = await entryOriginal();
 
       const mainJS = entries['main.js'];
-      const polyfills = './app/polyfills.ts';
+      const polyfills = './src/polyfills.ts';
 
       if (mainJS && !mainJS.includes(polyfills)) {
         entries['main.js'].unshift(polyfills);

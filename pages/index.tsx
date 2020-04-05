@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Homepage = ({  }: IHomepage) => {
+const HomePage = ({}: HomePageProps) => {
   return (
     <div>
       <h1>Hello</h1>
@@ -8,10 +8,10 @@ const Homepage = ({  }: IHomepage) => {
   );
 };
 
-Homepage.getInitialProps = async (): Promise<IHomepage> => {
+HomePage.getInitialProps = async (): Promise<HomePageProps> => {
   return {};
 };
 
-export interface IHomepage {}
+export interface HomePageProps {}
 
-export default Homepage;
+export default HomePage;

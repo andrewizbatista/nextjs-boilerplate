@@ -8,6 +8,9 @@
     "baseUrl": ".",
     "charset": "utf-8",
     "checkJs": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
     "jsx": "preserve",
     "jsxFactory": "React.createElement",
     "lib": ["dom", "es2017"],
@@ -18,8 +21,8 @@
     "noImplicitAny": true,
     "noImplicitReturns": false,
     "noImplicitThis": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
     "preserveConstEnums": true,
     "removeComments": true,
     "resolveJsonModule": true,
@@ -31,10 +34,8 @@
     "strictNullChecks": true,
     "strictPropertyInitialization": true,
     "target": "esnext",
-    "forceConsistentCasingInFileNames": true,
-    "esModuleInterop": true,
-    "isolatedModules": true
+    "typeRoots": ["./types/*"]
   },
-  "exclude": ["node_modules"],
+  "exclude": ["node_modules", ".plop", ".storybook"],
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"]
 }

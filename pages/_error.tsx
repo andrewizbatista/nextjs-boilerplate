@@ -1,7 +1,7 @@
 import React from 'react';
-import styled from 'styled-components';
+import { styled } from '@material-ui/styles';
 
-const ErrorPage = ({  }: IErrorPage) => {
+const ErrorPage = ({}: ErrorPageProps) => {
   return (
     <Wrapper>
       <h1>404: Page not found</h1>
@@ -9,11 +9,11 @@ const ErrorPage = ({  }: IErrorPage) => {
   );
 };
 
-export interface IErrorPage {}
+export interface ErrorPageProps {}
 
 export default ErrorPage;
 
-const Wrapper = styled.div`
-  text-align: center;
-  height: 100vh;
-`;
+const Wrapper = styled('div')({
+  textAlign: 'center',
+  height: '100vh',
+});
