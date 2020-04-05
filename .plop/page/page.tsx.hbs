@@ -1,0 +1,35 @@
+import React from 'react';
+
+// Components
+import Grid from '@material-ui/core/Grid';
+import Typography from '@material-ui/core/Typography';
+
+// Others
+import useGlobalStyles from 'src/styles';
+
+export const {{ pascalCase pageName }}Page = ({}: {{ pascalCase pageName }}PageProps) => {
+  const globalClasses = useGlobalStyles();
+
+  return (
+    <Grid
+      container
+      direction="row"
+      justify="center"
+      alignItems="center"
+    >
+      <Grid item xs={12}>
+        <Typography variant="h1">
+          {{ pascalCase pageName }}Page
+        </Typography>
+      </Grid>
+    </Grid>
+  );
+};
+
+{{ pascalCase pageName }}Page.getInitialProps = async (): Promise<{{ pascalCase pageName }}PageProps> => {
+  return {};
+};
+
+export interface {{ pascalCase pageName }}PageProps {}
+
+export default {{ pascalCase pageName }}Page;
