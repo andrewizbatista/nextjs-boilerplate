@@ -28,7 +28,7 @@ npm run dev
 
 I use [ESLint](https://eslint.org/) and [Prettier](https://prettier.io/) to maintain the code quality, [PLOP](https://plopjs.com/) to quickly scaffold some of the project elements (components, pages, etc...) and [Storybook](https://storybook.js.org/) to test and quickly iterate the development of React Components.
 
-#### PLOP Generators
+### PLOP Generators
 
 Create a new **Component**:
 
@@ -42,7 +42,7 @@ Create a new **Page**:
 npm run generate page
 ```
 
-#### Storybook
+### Storybook
 
 ```
 npm run storybook
