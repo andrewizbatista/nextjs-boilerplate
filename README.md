@@ -1,1 +1,69 @@
-# nextjs-boilerplate
+# Next.js Boilerplate
+
+This is a very opinionated Next.js starting boilerplate I use it as a base for the majority of my React projects.
+I try to always keep this repo up to date with the libraries and practices I think are best and better fit my coding style, but feel free to use it on your own projects and if you like you can always contact me with any questions.
+
+## Getting Started
+
+### Prerequisites
+
+- nodejs `v10.16+`
+- npm `v6.12+`
+
+### Installing
+
+1. Install all the project dependencies:
+
+```
+npm install
+```
+
+2. Run the project on your machine:
+
+```
+npm run dev
+```
+
+## Tooling
+
+I use [ESLint](https://eslint.org/) and [Prettier](https://prettier.io/) to maintain the code quality, [PLOP](https://plopjs.com/) to quickly scaffold some of the project elements (components, pages, etc...) and [Storybook](https://storybook.js.org/) to test and quickly iterate the development of React Components.
+
+#### PLOP Generators
+
+Create a new **Component**:
+
+```
+npm run generate component
+```
+
+Create a new **Page**:
+
+```
+npm run generate page
+```
+
+#### Storybook
+
+```
+npm run storybook
+```
+
+## Deployment
+
+To create a production ready build, run:
+
+```
+npm run export
+```
+
+Then deploy the generated files from the `/out` folder.
+
+## Built With
+
+- [TypeScript](https://www.typescriptlang.org/) - JavaScript Superset
+- [Next.js](https://nextjs.org/) - Web Framework
+- [Material UI](https://material-ui.com/) - UI Framework
+
+## Authors
+
+- **André Batista** - [andrewizbatista](https://github.com/andrewizbatista)
