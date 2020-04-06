@@ -1,9 +1,9 @@
 interface AppConfig {
-  developerSignature: string;
-  developerWebsite: string;
   appName: string;
   appWebsite: string;
   appThemeColor: string;
+  googleFonts?: string[];
   defaultLocale: Locale;
   availableLocales?: Locale[];
+  developerSignature: string;
 }

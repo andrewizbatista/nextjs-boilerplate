@@ -12,7 +12,7 @@ export const colors: {
 } = {
   Primary: '#14ce78',
   Secondary: '#14ce78',
-  Dark: '#333',
+  Dark: '#1e1e1e',
   Light: '#e2e2e2',
   LightDarker: '#a1a1a1',
   Error: '#ff4400',
