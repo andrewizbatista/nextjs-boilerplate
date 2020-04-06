@@ -1,5 +1,7 @@
 # Next.js Boilerplate
 
+Created by [andrewizbatista](https://github.com/andrewizbatista)
+
 This is a very opinionated Next.js starting boilerplate I use it as a base for the majority of my React projects.
 I try to always keep this repo up to date with the libraries and practices I think are best and better fit my coding style, but feel free to use it on your own projects and if you like you can always contact me with any questions.
 
@@ -24,11 +26,21 @@ npm install
 npm run dev
 ```
 
+### Folder Structure
+
+- `.plop` - [Plop](https://plopjs.com/) generators.
+- `.storybook` - [Storybook](https://storybook.js.org/) configurations.
+- `components` - all the app components.
+- `pages` - all the app routes.
+- `public` - static files that are served to the client.
+- `src` - code that makes the app running (scripts, configs, helpers, etc...).
+- `types` - [TypeScript](https://www.typescriptlang.org/) type declarations.
+
 ## Tooling
 
-I use [ESLint](https://eslint.org/) and [Prettier](https://prettier.io/) to maintain the code quality, [PLOP](https://plopjs.com/) to quickly scaffold some of the project elements (components, pages, etc...) and [Storybook](https://storybook.js.org/) to test and quickly iterate the development of React Components.
+I use [ESLint](https://eslint.org/) and [Prettier](https://prettier.io/) to maintain the code quality, [Plop](https://plopjs.com/) to quickly scaffold some of the project elements (components, pages, etc...) and [Storybook](https://storybook.js.org/) to test and quickly iterate the development of React Components.
 
-### PLOP Generators
+### Plop Generators
 
 Create a new **Component**:
 
