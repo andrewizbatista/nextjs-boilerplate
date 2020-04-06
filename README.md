@@ -28,9 +28,11 @@ npm run dev
 
 ### Folder Structure
 
+- `.next` - [Next.js](https://nextjs.org/) auto-generated configs.
 - `.plop` - [Plop](https://plopjs.com/) generators.
-- `.storybook` - [Storybook](https://storybook.js.org/) configurations.
+- `.storybook` - [Storybook](https://storybook.js.org/) configs.
 - `components` - all the app components.
+- `out` - production ready exported files.
 - `pages` - all the app routes.
 - `public` - static files that are served to the client.
 - `src` - code that makes the app running (scripts, configs, helpers, etc...).
