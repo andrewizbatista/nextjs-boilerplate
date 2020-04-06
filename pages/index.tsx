@@ -25,7 +25,7 @@ const HomePage = ({ pageMeta }: HomePageProps) => {
             @andrewizbatista
           </Link>
         </Typography>
-        <Typography variant="caption" component="p">
+        <Typography variant="caption">
           Good luck on your new project :)
         </Typography>
       </Wrapper>
@@ -59,7 +59,8 @@ const Wrapper = styled('div')({
   '& h2': {
     paddingTop: '0.25rem',
   },
-  '& p': {
+  '& span': {
+    display: 'block',
     paddingTop: '2rem',
   },
 });
