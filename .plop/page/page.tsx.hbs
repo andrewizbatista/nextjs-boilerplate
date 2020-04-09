@@ -26,9 +26,17 @@ export const {{ pascalCase pageName }}Page = ({}: {{ pascalCase pageName }}PageP
   );
 };
 
-{{ pascalCase pageName }}Page.getInitialProps = async (): Promise<{{ pascalCase pageName }}PageProps> => {
-  return {};
+export const getStaticProps: GetStaticProps = async () => {
+  return {
+    props: {
+      pageMeta: {
+        metaTitle: 'Next.js Boilderplate',
+        metaDescription: 'Next.js Boilderplate by @andrewizbatista',
+      },
+    },
+  };
 };
+
 
 export interface {{ pascalCase pageName }}PageProps {}
 
