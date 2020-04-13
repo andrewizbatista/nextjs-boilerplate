@@ -1,6 +1,6 @@
 # Next.js Boilerplate
 
-Created by [andrewizbatista](https://github.com/andrewizbatista)
+Created by [@andrewizbatista](https://github.com/andrewizbatista)
 
 This is a very opinionated Next.js starting boilerplate I use it as a base for the majority of my React projects.
 I try to always keep this repo up to date with the libraries and practices I think are best and better fit my coding style, but feel free to use it on your own projects and if you like you can always contact me with any questions.
@@ -80,4 +80,4 @@ Then deploy the generated files from the `/out` folder.
 
 ## Authors
 
-- **André Batista** - [andrewizbatista](https://github.com/andrewizbatista)
+- **André Batista** - [@andrewizbatista](https://github.com/andrewizbatista)
