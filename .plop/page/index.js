@@ -35,7 +35,7 @@ const pageGenerator = {
       actions.push({
         type: 'add',
         path: path.join(pagesPath, '{{pathCase pageName}}.tsx'),
-        templateFile: `./page/${filename}.hbs`,
+        templateFile: `./page/_${filename}.hbs`,
         abortOnFail: true,
       });
     });

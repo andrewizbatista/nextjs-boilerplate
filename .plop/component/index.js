@@ -37,7 +37,7 @@ const componentGenerator = {
       actions.push({
         type: 'add',
         path: path.join(folder, filename),
-        templateFile: `./component/${filename}.hbs`,
+        templateFile: `./component/_${filename}.hbs`,
         abortOnFail: true,
       });
     });
