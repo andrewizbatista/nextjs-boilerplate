@@ -4,7 +4,7 @@ type ApiParams = Record<string, string | number | boolean> | null;
 
 type ApiPayload = Record<string, any> | null;
 
-interface FetcherOptions {
+interface ApiRequestOptions {
   method: ApiMethods;
   endpoint: string;
   baseUrl?: string;

@@ -1,15 +1,17 @@
 import axios from 'axios';
 
-const API_URL = 'https://jsonplaceholder.typicode.com';
+import appConfig from 'src/appConfig';
 
-const request = <Data>({
+const { API_URL } = appConfig;
+
+const apiRequest = <Data>({
   method,
   endpoint,
   baseUrl = API_URL,
   params,
   payload,
   noAuth,
-}: FetcherOptions): Promise<Data> => {
+}: ApiRequestOptions): Promise<Data> => {
   return new Promise((resolve, reject) =>
     axios({
       data: payload,
@@ -50,7 +52,7 @@ export const fetcher = <Data>(
   params?: ApiParams,
   noAuth?: boolean,
 ) =>
-  request<Data>({
+  apiRequest<Data>({
     method: 'GET',
     endpoint,
     params,
@@ -62,7 +64,7 @@ export const poster = <Data>(
   payload: ApiPayload,
   noAuth?: boolean,
 ) =>
-  request<Data>({
+  apiRequest<Data>({
     method: 'POST',
     endpoint,
     payload,
