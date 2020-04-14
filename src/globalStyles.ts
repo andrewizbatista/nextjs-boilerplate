@@ -5,13 +5,7 @@ import {
   Theme,
 } from '@material-ui/core/styles';
 
-const styles = makeStyles(({}: Theme) =>
-  createStyles({
-    wrapper: {
-      height: '100vh',
-    },
-  }),
-);
+const styles = makeStyles(({}: Theme) => createStyles({}));
 
 const useGlobalStyles = () => styles(useTheme());
 

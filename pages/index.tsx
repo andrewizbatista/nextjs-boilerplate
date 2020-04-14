@@ -34,12 +34,15 @@ const HomePage = ({ pageMeta }: HomePageProps) => {
 };
 
 export const getStaticProps: GetStaticProps = async () => {
+  const pageMeta: PageMeta = {
+    pageUrl: '/',
+    metaTitle: 'Next.js Boilderplate',
+    metaDescription: 'Next.js Boilderplate by @andrewizbatista',
+  };
+
   return {
     props: {
-      pageMeta: {
-        metaTitle: 'Next.js Boilderplate',
-        metaDescription: 'Next.js Boilderplate by @andrewizbatista',
-      },
+      pageMeta,
     },
   };
 };

@@ -1,7 +1,7 @@
 {
-  "name": "nextjs-boilerplate",
-  "short_name": "",
-  "description": "",
+  "name": "Next.js Boilerplate",
+  "short_name": "nextjs-boilerplate",
+  "description": "Next.js Boilerplate by @andrewizbatista",
   "lang": "en",
   "dir": "ltr",
   "start_url": ".",

@@ -8,9 +8,10 @@ import Document, {
 import { ServerStyleSheets } from '@material-ui/styles';
 
 import StaticMetaTags from 'components/MetaTags/Static';
-import appConfig from 'src/config';
+import appConfig from 'src/appConfig';
 
-const { defaultLocale } = appConfig;
+const { LOCALES } = appConfig;
+const defaultLocale = LOCALES[0];
 
 class MyDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {
@@ -35,7 +36,7 @@ class MyDocument extends Document {
 
   public render() {
     return (
-      <Html lang={defaultLocale.code}>
+      <Html lang={defaultLocale.CODE}>
         <StaticMetaTags />
         <body>
           <Main />

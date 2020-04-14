@@ -1,33 +1,50 @@
 import React from 'react';
 import { Head } from 'next/document';
 
-import appConfig from 'src/config';
+import appConfig from 'src/appConfig';
 
 const {
-  appName,
-  appThemeColor,
-  googleFonts,
-  defaultLocale,
-  developerSignature,
+  APP_NAME,
+  APP_DOMAIN,
+  THEME_COLOR,
+  LOCALES,
+  GOOGLE_FONTS,
+  DEV_SIGNATURE,
 } = appConfig;
 
+const defaultLocale: Locale = LOCALES[0];
+const importedGoogleFonts: string = GOOGLE_FONTS?.join('|');
+const metaIconSizes: string[] = ['36', '48', '72', '96', '144', '192'];
+
 const StaticMetaTags = ({}: StaticMetaTagsProps) => {
-  const importedGoogleFonts = googleFonts?.join('|');
   return (
     <Head>
-      <meta charSet="utf-8" />
       <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
-      <meta httpEquiv="Content-Language" content={defaultLocale.code} />
-      <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1, shrink-to-fit=no"
-      />
-      <meta name="generator" content={developerSignature} />
-      <meta name="language" content={defaultLocale.code} />
-      <meta name="reference" content={appName} />
-      <meta name="theme-color" content={appThemeColor} />
+      <meta httpEquiv="Content-Language" content={defaultLocale.CODE} />
+      <meta name="generator" content={DEV_SIGNATURE} />
+      <meta name="language" content={defaultLocale.CODE} />
+      <meta name="reference" content={APP_NAME} />
+      <meta name="theme-color" content={THEME_COLOR} />
       <meta name="robots" content="index,follow" />
+      <meta name="apple-mobile-web-app-title" content={APP_NAME} />
+      <meta name="apple-mobile-web-app-capable" content="yes" />
+      <meta name="apple-touch-fullscreen" content="yes" />
+      <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+      <link rel="canonical" href={APP_DOMAIN} />
       <link rel="manifest" href="/manifest.json" />
+
+      {metaIconSizes &&
+        metaIconSizes.map((size) => {
+          const xSize = `${size}x${size}`;
+          return (
+            <link
+              rel="icon"
+              type="image/png"
+              sizes={xSize}
+              href={`/meta/icon-${xSize}.png`}
+            />
+          );
+        })}
       {importedGoogleFonts && (
         <>
           <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
@@ -38,12 +55,6 @@ const StaticMetaTags = ({}: StaticMetaTagsProps) => {
         </>
       )}
       <link rel="stylesheet" href="/css/main.css" />
-      <link
-        rel="icon"
-        type="image/png"
-        sizes="192x192"
-        href="/meta/icon-192x192.png"
-      />
     </Head>
   );
 };

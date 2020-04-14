@@ -6,6 +6,11 @@ const DynamicMetaTags = ({
 }: DynamicMetaTagsProps) => {
   return (
     <Head>
+      <meta charSet="utf-8" />
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no"
+      />
       <title>{metaTitle}</title>
       <meta name="title" content={metaTitle} />
       <meta name="description" content={metaDescription} />
