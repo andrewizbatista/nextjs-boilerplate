@@ -1,20 +1,12 @@
 import { createMuiTheme } from '@material-ui/core/styles';
 
-const muiTheme = createMuiTheme();
-
-export const colors: {
-  Primary: string;
-  Secondary: string;
-  Dark: string;
-  Light: string;
-  LightDarker: string;
-  Error: string;
-} = {
+export const colors: Colors = {
   Primary: '#14ce78',
   Secondary: '#14ce78',
-  Dark: '#1e1e1e',
-  Light: '#e2e2e2',
-  LightDarker: '#a1a1a1',
+  TextPrimary: '#fff',
+  TextSecondary: '#a1a1a1',
+  Darker: '#1e1e1e',
+  Lighter: '#e2e2e2',
   Error: '#ff4400',
 };
 
@@ -22,7 +14,7 @@ export const theme = createMuiTheme({
   palette: {
     type: 'dark',
     background: {
-      default: colors.Dark,
+      default: colors.Darker,
     },
     primary: {
       main: colors.Primary,
@@ -34,8 +26,8 @@ export const theme = createMuiTheme({
       main: colors.Error,
     },
     text: {
-      primary: colors.Light,
-      secondary: colors.LightDarker,
+      primary: colors.TextPrimary,
+      secondary: colors.TextSecondary,
     },
   },
   typography: {
@@ -44,3 +36,36 @@ export const theme = createMuiTheme({
   overrides: {},
   props: {},
 });
+
+/**
+ * * Media Queries
+ * {
+ *   fontSize: '2rem',
+ *   [mediaQueries.mobile]: {
+ *     fontSize: '1rem'
+ *   }
+ * }
+ */
+export const mediaQueries: MediaQueries = {
+  mobile: '@media (max-width: 425px)',
+  tablet: '@media (max-width: 1024px)',
+  laptop: '@media (max-width: 1440px)',
+  desktop: '@media (min-width: 1441px)',
+};
+
+interface Colors {
+  Primary: string;
+  Secondary: string;
+  TextPrimary: string;
+  TextSecondary: string;
+  Darker: string;
+  Lighter: string;
+  Error: string;
+}
+
+interface MediaQueries {
+  mobile: string;
+  tablet: string;
+  laptop: string;
+  desktop: string;
+}
