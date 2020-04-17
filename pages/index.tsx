@@ -6,6 +6,7 @@ import { styled } from '@material-ui/styles';
 import Link from '@material-ui/core/Link';
 import Typography from '@material-ui/core/Typography';
 import PageLayout from 'components/PageLayout';
+import TestSWR from 'components/TestSWR';
 
 const HomePage = ({ pageMeta }: HomePageProps) => {
   return (
@@ -29,6 +30,7 @@ const HomePage = ({ pageMeta }: HomePageProps) => {
           Good luck on your new project :)
         </Typography>
       </Wrapper>
+      <TestSWR />
     </PageLayout>
   );
 };

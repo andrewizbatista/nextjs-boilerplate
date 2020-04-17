@@ -24,7 +24,7 @@ const apiRequest = <Data>({
 
         // 2xx Success
         if (res.status >= 200 && res.status <= 299) {
-          return resolve(res.data);
+          return resolve(res.data as Data);
         }
 
         // 4xx Client Errors
