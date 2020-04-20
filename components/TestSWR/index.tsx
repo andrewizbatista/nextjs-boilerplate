@@ -13,8 +13,8 @@ export const TestSWR = ({}: TestSWRProps) => {
 
   useEffect(() => {
     setTimeout(() => {
-      poster<User>('/users', { id: 1, name: 'dodo' }).then((user) => {
-        console.log({ user: user.id });
+      poster<User>('/users', { name: 'andrewizbatista' }).then((user) => {
+        console.log({ user }); // eslint-disable-line no-console
         setParams({ id: 2 });
       });
     }, 3000);
