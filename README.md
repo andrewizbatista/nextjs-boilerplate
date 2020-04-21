@@ -9,8 +9,8 @@ I try to always keep this repo up to date with the libraries and practices I thi
 
 ### Prerequisites
 
-- nodejs `v10.16+`
-- npm `v6.12+`
+- nodejs `v12.16+`
+- npm `v6.14+`
 
 ### Installing
 
@@ -75,7 +75,8 @@ Then deploy the generated files from the `/out` folder.
 ## Built With
 
 - [TypeScript](https://www.typescriptlang.org/) - JavaScript Superset
-- [Next.js](https://nextjs.org/) - Web Framework
+- [React.js](https://reactjs.org/) - Web Framework
+- [Next.js](https://nextjs.org/) - React Framework
 - [Material UI](https://material-ui.com/) - UI Framework
 
 ## Authors
