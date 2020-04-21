@@ -10,7 +10,6 @@ const apiRequest = <Data>({
   baseUrl = API_URL,
   params,
   payload,
-  noAuth,
 }: ApiRequestOptions): Promise<Data> => {
   return new Promise((resolve, reject) =>
     axios({

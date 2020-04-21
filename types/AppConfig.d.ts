@@ -22,7 +22,7 @@ interface AppConfig {
   /**
    * Main api url.
    */
-  API_URL: string;
+  API_URL?: string;
   /**
    * List of all the google fonts used.
    */
