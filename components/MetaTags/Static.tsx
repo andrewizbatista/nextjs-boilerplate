@@ -32,7 +32,6 @@ const StaticMetaTags = ({}: StaticMetaTagsProps) => {
       <meta name="apple-mobile-web-app-status-bar-style" content="default" />
       <link rel="canonical" href={APP_DOMAIN} />
       <link rel="manifest" href="/manifest.json" />
-
       {metaIconSizes &&
         metaIconSizes.map((size) => {
           const xSize = `${size}x${size}`;
