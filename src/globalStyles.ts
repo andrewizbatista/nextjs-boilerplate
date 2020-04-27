@@ -5,8 +5,8 @@ import {
   Theme,
 } from '@material-ui/core/styles';
 
-const styles = makeStyles(({}: Theme) => createStyles({}));
+const globalStyles = makeStyles(({}: Theme) => createStyles({}));
 
-const useGlobalStyles = () => styles(useTheme());
+const useGlobalStyles = () => globalStyles(useTheme());
 
 export default useGlobalStyles;
