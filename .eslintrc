@@ -36,9 +36,10 @@
     "import/resolver": {
       "node": {
         "paths": ["."],
-        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+        "extensions": [".js", ".jsx", ".ts", ".tsx", ".d.ts"]
       }
-    }
+    },
+    "linkComponents": ["Link"]
   },
   "rules": {
     "@typescript-eslint/explicit-function-return-type": 0,
