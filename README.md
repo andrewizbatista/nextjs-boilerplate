@@ -11,19 +11,20 @@ I try to always keep this repo up to date with the libraries and practices I thi
 
 - nodejs `v12.16+`
 - npm `v6.14+`
+- yarn `v1.22+`
 
 ### Installing
 
 1. Install all the project dependencies:
 
 ```
-npm install
+yarn install
 ```
 
 2. Run the project on your machine:
 
 ```
-npm run dev
+yarn dev
 ```
 
 ### Folder Structure
@@ -47,19 +48,19 @@ I use [ESLint](https://eslint.org/) and [Prettier](https://prettier.io/) to main
 Create a new **Component**:
 
 ```
-npm run generate component
+yarn generate component
 ```
 
 Create a new **Page**:
 
 ```
-npm run generate page
+yarn generate page
 ```
 
 ### Storybook
 
 ```
-npm run storybook
+yarn storybook
 ```
 
 ## Deployment
@@ -67,7 +68,7 @@ npm run storybook
 To create a production ready build, run:
 
 ```
-npm run export
+yarn export
 ```
 
 Then deploy the generated files from the `/out` folder.
