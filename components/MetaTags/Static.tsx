@@ -37,6 +37,7 @@ const StaticMetaTags = ({}: StaticMetaTagsProps) => {
           const xSize = `${size}x${size}`;
           return (
             <link
+              key={xSize}
               rel="icon"
               type="image/png"
               sizes={xSize}
