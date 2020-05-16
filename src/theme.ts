@@ -2,7 +2,7 @@ import { createMuiTheme } from '@material-ui/core/styles';
 
 export const colors: Colors = {
   Primary: '#14ce78',
-  Secondary: '#14ce78',
+  Secondary: '#14ce75',
   TextPrimary: '#fff',
   TextSecondary: '#a1a1a1',
   Darker: '#1e1e1e',
