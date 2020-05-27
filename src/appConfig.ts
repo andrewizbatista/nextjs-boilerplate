@@ -1,10 +1,10 @@
-import { colors } from 'src/theme';
+import theme from 'src/theme';
 
 const appConfig: AppConfig = {
   APP_NAME: 'Next.js Boilerplate',
   APP_DESCRIPTION: 'Next.js Boilerplate by @andrewizbatista',
   APP_DOMAIN: 'http://localhost',
-  THEME_COLOR: colors.Secondary,
+  THEME_COLOR: theme.palette.primary.main,
   LOCALES: [
     {
       CODE: 'en',
