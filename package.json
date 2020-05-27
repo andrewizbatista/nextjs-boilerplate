@@ -1,8 +1,8 @@
 {
   "name": "nextjs-boilerplate",
   "version": "1.0.0",
-  "description": "",
-  "license": "ISC",
+  "description": "Next.js Boilerplate by @andrewizbatista",
+  "license": "MIT",
   "author": {
     "name": "André Batista",
     "email": "hi@andrebatista.dev",
